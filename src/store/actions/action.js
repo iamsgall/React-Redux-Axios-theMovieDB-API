@@ -2,6 +2,7 @@ import {
   GET_MOVIES,
   GET_MORE_MOVIES,
   RESET_NEXT_PAGE,
+  SET_SEARCH,
 } from '../constants/actionTypes';
 import API from '../../utils/API';
 
@@ -36,4 +37,9 @@ export const getMoreMovies = nextPage => async dispatch => {
 
 export const resetNextPage = () => ({
   type: RESET_NEXT_PAGE,
+});
+
+export const setSearch = search => ({
+  type: SET_SEARCH,
+  payload: {search},
 });

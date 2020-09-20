@@ -4,7 +4,15 @@ import {
   faStar,
   faSync,
   faVoteYea,
+  faSearch,
 } from '@fortawesome/free-solid-svg-icons';
 import {fab} from '@fortawesome/free-brands-svg-icons';
 
-export default library.add(fab, faStar, faVoteYea, faLanguage, faSync);
+export default library.add(
+  fab,
+  faStar,
+  faVoteYea,
+  faLanguage,
+  faSync,
+  faSearch
+);

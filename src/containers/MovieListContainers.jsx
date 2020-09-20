@@ -5,7 +5,7 @@ import {getMovies, getMoreMovies} from '../store/actions/action';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 export const MovieListContainers = props => {
-  console.log(props.movies);
+  // console.log(props.movies);
 
   useEffect(() => {
     props.getMovies();

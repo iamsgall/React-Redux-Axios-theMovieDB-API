@@ -4,6 +4,7 @@ import {useHistory} from 'react-router-dom';
 
 export default function Movie(props) {
   let history = useHistory();
+
   return (
     <div
       className='card mb-3 shadow-sm bg-white'

@@ -2,12 +2,14 @@ import {
   GET_MORE_MOVIES,
   GET_MOVIES,
   RESET_NEXT_PAGE,
+  SET_SEARCH,
 } from '../constants/actionTypes';
 
 const initialState = {
   movies: [],
   loading: true,
   nextPage: 2,
+  filteredMovies: [],
 };
 
 export default (state = initialState, {type, payload}) => {
@@ -26,6 +28,11 @@ export default (state = initialState, {type, payload}) => {
       return {
         ...state,
         nextPage: 2,
+      };
+    case SET_SEARCH:
+      return {
+        ...state,
+        filteredMovies: payload.search,
       };
 
     default:
